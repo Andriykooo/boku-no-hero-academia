@@ -1,1 +1,1 @@
-export const baseApi = process.env.VERCEL_URL + "/api";
+export const baseApi = "https://" + process.env.VERCEL_URL + "/api";
