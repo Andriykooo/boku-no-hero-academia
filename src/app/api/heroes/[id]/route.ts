@@ -1,5 +1,6 @@
 import { heroes } from "@/mock/heroes";
 import { Params } from "@/types/params.type";
+import { NextResponse } from "next/server";
 
 export async function GET(_: Request, { params }: Params<{ id: string }>) {
   let nextHeroIndex = 0;
@@ -15,12 +16,12 @@ export async function GET(_: Request, { params }: Params<{ id: string }>) {
   });
 
   if (!hero) {
-    return new Response("Error: Not Found", {
+    return new NextResponse("Error: Not Found", {
       status: 404,
     });
   }
 
-  return Response.json({
+  return NextResponse.json({
     data: hero,
     nextHeroId: heroes[nextHeroIndex].id,
   });

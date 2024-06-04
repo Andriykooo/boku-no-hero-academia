@@ -1,6 +1,6 @@
 import { heroes } from "@/mock/heroes";
-import { Hero } from "@/types/hero.type";
+import { NextResponse } from "next/server";
 
 export async function GET() {
-  return Response.json({ data: heroes });
+  return NextResponse.json({ data: heroes });
 }
