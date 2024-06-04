@@ -1,9 +1,11 @@
 import { routes } from "@/constants/routes";
-import { heroes } from "@/mock/heroes";
+import { getHeroes } from "@/services/heroes.service";
 import Image from "next/image";
 import Link from "next/link";
 
 export default async function Posts() {
+  const { data: heroes } = await getHeroes();
+
   return (
     <main className="size-full">
       <header className="p-5 w-full flex items-center justify-center">

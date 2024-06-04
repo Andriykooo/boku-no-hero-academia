@@ -7,7 +7,8 @@ const bungee = Bungee({ weight: ["400"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "My Hero Academia",
-  description: "My Hero Academia",
+  description:
+    "Boku no Hero Academia is a manga written and illustrated by Kohei Horikoshi and published in Weekly Shonen Jump. The first chapter of the manga was published on July 7, 2014 in the 32nd issue of the magazine.",
 };
 
 export default function RootLayout({

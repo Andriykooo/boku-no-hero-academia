@@ -1,4 +1,6 @@
-export const heroes = [
+import { Hero } from "@/types/hero.type";
+
+export const heroes: Hero[] = [
   {
     id: 1,
     firstName: "Midoriya",
@@ -125,4 +127,4 @@ export const heroes = [
     picture: "/images/heroes/momo-yaoyorozu.png",
     rank: 20,
   },
-];
+] as const;

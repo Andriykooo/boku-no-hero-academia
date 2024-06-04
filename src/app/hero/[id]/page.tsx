@@ -1,5 +1,5 @@
 import { routes } from "@/constants/routes";
-import { heroes } from "@/mock/heroes";
+import { getHero, getHeroes } from "@/services/heroes.service";
 import { Params } from "@/types/params.type";
 import classNames from "classnames";
 import { Lexend } from "next/font/google";
@@ -10,15 +10,28 @@ import { notFound } from "next/navigation";
 const lexend = Lexend({ weight: "500", subsets: ["latin"] });
 
 export async function generateStaticParams() {
+  const { data: heroes } = await getHeroes();
+
   return heroes.map((hero) => ({
     id: hero.id.toString(),
   }));
 }
 
+export async function generateMetadata({
+  params: { id },
+}: Params<{ id: string }>) {
+  const { data: hero } = await getHero(id);
+
+  return {
+    title: `${hero.firstName} ${hero.lastName}`,
+    description: hero.description,
+  };
+}
+
 export default async function Posts({
   params: { id },
 }: Params<{ id: string }>) {
-  const hero = heroes.find((hero) => +id === hero.id);
+  const { data: hero, nextHeroId } = await getHero(id);
 
   if (!hero) {
     notFound();
@@ -83,7 +96,7 @@ export default async function Posts({
             </div>
             <div className="flex justify-end w-full">
               <Link
-                href={`${routes.hero}/${heroes.length === +id ? 1 : +id + 1}`}
+                href={`${routes.hero}/${nextHeroId}`}
                 style={{ color: secondaryColor }}
                 className="flex flex-col gap-1 text-sm"
               >
