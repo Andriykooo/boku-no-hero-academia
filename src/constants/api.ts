@@ -1,1 +1,1 @@
-export const baseApi = process.env.NEXT_PUBLIC_VERCEL_URL;
+export const baseApi = process.env.VERCEL_URL;
