@@ -4,14 +4,13 @@ import { HeroCard } from "@/components/hero/hero-card";
 import { Centered } from "@/layouts/centered";
 import { Header } from "@/layouts/header";
 import { getHeroes } from "@/services/heroes.service";
-import { notFound } from "next/navigation";
 
 export default async function Heroes() {
-  // const res = await getHeroes();
+  const res = await getHeroes();
 
   return (
     <>
-      {/* <Header />
+      <Header />
       <Centered>
         <GridList>
           {res?.data.map((hero) => {
@@ -22,7 +21,7 @@ export default async function Heroes() {
             );
           })}
         </GridList>
-      </Centered> */}
+      </Centered>
     </>
   );
 }
