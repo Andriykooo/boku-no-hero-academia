@@ -8,10 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        'base': '#1E1E1E',
+      },
+      keyframes: {
+        slideUp: {
+          "0%": { transform: "translate(-25%, 25%)", opacity: "0" },
+          "100%": { transform: "translateY(-25%, 0)", opacity: "1" },
+        },
+        scaleUp: {
+          "0%": { transform: "scale(0.9)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
+      },
+      animation: {
+        slideUp: "slideUp 0.6s ease",
+        scaleUp: "scaleUp 0.5s ease",
       },
     },
   },

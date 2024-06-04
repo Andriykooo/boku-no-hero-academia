@@ -1,0 +1,42 @@
+<svg width="1080" height="520" viewBox="0 0 1080 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1080" height="520" fill="#C0322E"/>
+<g clip-path="url(#clip0_3004_223)">
+<path d="M0 0H450L0 520V0Z" fill="#292A2C"/>
+<path d="M1080 520L630 520L1080 0L1080 520Z" fill="#292A2C"/>
+<circle cx="583.5" cy="259.5" r="126.786" transform="rotate(90 583.5 259.5)" fill="#FCD0A9"/>
+<circle cx="583.5" cy="259.5" r="76.0714" transform="rotate(90 583.5 259.5)" fill="#C0322E"/>
+<rect x="761" y="234.143" width="50.7143" height="101.429" transform="rotate(90 761 234.143)" fill="#FCD0A9"/>
+<rect x="507.429" y="234.143" width="50.7143" height="101.429" transform="rotate(90 507.429 234.143)" fill="#FCD0A9"/>
+<rect x="608.858" y="437" width="50.7143" height="101.429" transform="rotate(-180 608.858 437)" fill="#FCD0A9"/>
+<rect x="608.858" y="183.429" width="50.7143" height="101.429" transform="rotate(-180 608.858 183.429)" fill="#FCD0A9"/>
+<rect x="475.919" y="402.942" width="50.7143" height="101.429" transform="rotate(-135 475.919 402.942)" fill="#FCD0A9"/>
+<rect x="655.221" y="223.64" width="50.7143" height="101.429" transform="rotate(-135 655.221 223.64)" fill="#FCD0A9"/>
+<rect x="726.942" y="367.082" width="50.7143" height="101.429" transform="rotate(135 726.942 367.082)" fill="#FCD0A9"/>
+<rect x="547.639" y="187.779" width="50.7143" height="101.429" transform="rotate(135 547.639 187.779)" fill="#FCD0A9"/>
+<circle cx="838" cy="143" r="28.5714" fill="#FCD0A9"/>
+<ellipse cx="838" cy="143" rx="17.1428" ry="17.1428" fill="#C0322E"/>
+<rect x="832.286" y="103" width="11.4285" height="22.8571" fill="#FCD0A9"/>
+<rect x="832.286" y="160.143" width="11.4285" height="22.8571" fill="#FCD0A9"/>
+<rect x="878" y="137.286" width="11.4285" height="22.8571" transform="rotate(90 878 137.286)" fill="#FCD0A9"/>
+<rect x="820.857" y="137.286" width="11.4285" height="22.8571" transform="rotate(90 820.857 137.286)" fill="#FCD0A9"/>
+<rect x="870.325" y="167.244" width="11.4285" height="22.8571" transform="rotate(135 870.325 167.244)" fill="#FCD0A9"/>
+<rect x="829.919" y="126.837" width="11.4285" height="22.8571" transform="rotate(135 829.919 126.837)" fill="#FCD0A9"/>
+<rect x="862.244" y="110.675" width="11.4285" height="22.8571" transform="rotate(45 862.244 110.675)" fill="#FCD0A9"/>
+<rect x="821.838" y="151.081" width="11.4285" height="22.8571" transform="rotate(45 821.838 151.081)" fill="#FCD0A9"/>
+<circle cx="315" cy="455" r="28.5714" fill="#FCD0A9"/>
+<ellipse cx="315" cy="455" rx="17.1428" ry="17.1428" fill="#C0322E"/>
+<rect x="309.286" y="415" width="11.4285" height="22.8571" fill="#FCD0A9"/>
+<rect x="309.286" y="472.143" width="11.4285" height="22.8571" fill="#FCD0A9"/>
+<rect x="355" y="449.286" width="11.4285" height="22.8571" transform="rotate(90 355 449.286)" fill="#FCD0A9"/>
+<rect x="297.857" y="449.286" width="11.4285" height="22.8571" transform="rotate(90 297.857 449.286)" fill="#FCD0A9"/>
+<rect x="347.325" y="479.244" width="11.4285" height="22.8571" transform="rotate(135 347.325 479.244)" fill="#FCD0A9"/>
+<rect x="306.919" y="438.837" width="11.4285" height="22.8571" transform="rotate(135 306.919 438.837)" fill="#FCD0A9"/>
+<rect x="339.244" y="422.675" width="11.4285" height="22.8571" transform="rotate(45 339.244 422.675)" fill="#FCD0A9"/>
+<rect x="298.837" y="463.081" width="11.4285" height="22.8571" transform="rotate(45 298.837 463.081)" fill="#FCD0A9"/>
+</g>
+<defs>
+<clipPath id="clip0_3004_223">
+<rect width="1080" height="520" fill="white"/>
+</clipPath>
+</defs>
+</svg>
