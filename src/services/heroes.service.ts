@@ -5,7 +5,7 @@ import { ResponseType } from "@/types/response.type";
 export async function getHeroes(): Promise<ResponseType<Hero[]> | undefined> {
   try {
     const res = await fetch(heroesApi.getHeroes);
-    console.log(res);
+    console.log(heroesApi);
 
     return res.json();
   } catch (e) {
@@ -18,7 +18,7 @@ export async function getHero(
 ): Promise<(ResponseType<Hero> & { nextHeroId: number }) | undefined> {
   try {
     const res = await fetch(heroesApi.getHeroById(+id));
-    console.log(res);
+    console.log(heroesApi);
     
     return res.json();
   } catch (e) {
