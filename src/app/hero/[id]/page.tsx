@@ -4,9 +4,13 @@ import { Params } from "@/types/params.type";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
-  const { data: heroes } = await getHeroes();
+  const res = await getHeroes();
 
-  return heroes.map((hero) => ({
+  if (!res) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.data.map((hero) => ({
     id: hero.id.toString(),
   }));
 }
@@ -14,27 +18,31 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params: { id },
 }: Params<{ id: string }>) {
-  const { data: hero } = await getHero(id);
+  const res = await getHero(id);
+
+  if (!res) {
+    throw new Error("Failed to fetch data");
+  }
 
   return {
-    title: `${hero.firstName} ${hero.lastName}`,
-    description: hero.description,
+    title: `${res.data.firstName} ${res.data.lastName}`,
+    description: res.data.description,
   };
 }
 
 export default async function Hero({ params: { id } }: Params<{ id: string }>) {
-  const { data: hero, nextHeroId } = await getHero(id);
+  const res = await getHero(id);
 
-  if (!hero) {
+  if (!res) {
     notFound();
   }
 
   return (
     <div
       className="flex size-full justify-center items-center"
-      style={{ backgroundColor: hero.backgroundColor }}
+      style={{ backgroundColor: res.data.backgroundColor }}
     >
-      <HeroInfo {...hero} nextHeroId={nextHeroId} />
+      <HeroInfo {...res.data} nextHeroId={res.nextHeroId} />
     </div>
   );
 }
